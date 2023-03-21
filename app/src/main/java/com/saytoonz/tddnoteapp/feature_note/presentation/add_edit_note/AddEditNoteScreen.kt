@@ -94,7 +94,6 @@ fun AddEditNoteScreen(
 
                 Note.noteColors.forEach { color ->
                     val colorInt = color.toArgb()
-
                     Box(
                         modifier = Modifier
                             .size(50.dp)
@@ -140,6 +139,7 @@ fun AddEditNoteScreen(
                 },
                 textStyle = MaterialTheme.typography.h5
             )
+
             Spacer(modifier = Modifier.height(16.dp))
 
             TransparentHintTextField(
