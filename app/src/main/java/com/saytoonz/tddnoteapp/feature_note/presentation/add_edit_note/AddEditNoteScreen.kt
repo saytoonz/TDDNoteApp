@@ -40,7 +40,7 @@ fun AddEditNoteScreen(
 
     val noteBackgroundAnimateable = remember {
         Animatable(
-            Color(if (noteColor != -1) noteColor else viewModel.noteColor.value)
+         initialValue =  Color(if (noteColor != -1) noteColor else viewModel.noteColor.value)
         )
     }
 
@@ -105,6 +105,7 @@ fun AddEditNoteScreen(
                                 color = if (viewModel.noteColor.value == colorInt)
                                     Color.Black
                                 else Color.Transparent,
+                                shape = CircleShape
                             )
                             .clickable {
                                 coroutineScope.launch {
