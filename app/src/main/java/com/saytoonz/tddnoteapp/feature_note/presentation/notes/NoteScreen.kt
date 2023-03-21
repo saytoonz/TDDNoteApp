@@ -101,12 +101,10 @@ fun NoteScreen(
                         modifier = Modifier
                             .fillMaxWidth()
                             .clickable {
-
                                 navController.navigate(
                                     Screen.AddEditNoteScreen.route
                                 +"?noteId=${note.id}&noteColor=${note.color}"
                                 )
-
                             },
                         onDeleteClick = {
                             viewModel.onEvent(NotesEvent.DeleteNote(note))
