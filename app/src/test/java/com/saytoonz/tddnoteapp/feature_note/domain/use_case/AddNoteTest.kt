@@ -15,7 +15,7 @@ class AddNoteTest {
     private lateinit var fakeNoteRepository: FakeNoteRepository
 
     //Fixture
-    val noteWithOutTitle = Note(
+   private val noteWithOutTitle = Note(
         title = "",
         content = "content",
         timestamp = 1L,
@@ -23,7 +23,7 @@ class AddNoteTest {
         id = 100
     )
 
-    val noteWithOutContent = Note(
+    private val noteWithOutContent = Note(
         title = "Title",
         content = "",
         timestamp = 1L,
@@ -31,7 +31,7 @@ class AddNoteTest {
         id = 100
     )
 
-    val noteComplete = Note(
+  private  val noteComplete = Note(
         title = "Title",
         content = "content",
         timestamp = 1L,
