@@ -33,7 +33,8 @@ fun DefaultRadioButton(
         
         Text(
             text = text,
-            style = MaterialTheme.typography.body1
+            style = MaterialTheme.typography.body1,
+            color = MaterialTheme.colors.primary,
         )
     }
 

@@ -16,7 +16,7 @@ private val DarkColorPalette = darkColors(
 
 
 @Composable
-fun TDDNoteAppTheme(darkTheme: Boolean = true, content: @Composable () -> Unit) {
+fun TDDNoteAppTheme(content: @Composable () -> Unit) {
     MaterialTheme(
         colors = DarkColorPalette,
         typography = Typography,
