@@ -7,7 +7,7 @@ import kotlinx.coroutines.flow.flow
 
 class FakeNoteRepository: NoteRepository {
 
-    private val notes = mutableListOf<Note>()
+     val notes = mutableListOf<Note>()
 
     override fun getNotes(): Flow<List<Note>> {
         return flow {
